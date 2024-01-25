@@ -26,14 +26,6 @@ header {
     padding: 0px 20px 0px 20px;
 }
 
-.details-container {
-    display: flex;
-    flex-direction: column;
-    background-color: red;
-    text-align: left; 
-    padding: 0px 20px 0px 20px;
-}
-
 .profile-container {
     background-color: rgb(82, 94, 251);
 }
@@ -72,8 +64,48 @@ header {
     background-color: rgb(251, 182, 114);
 }
 
+.job2-container {
+    background-color: rgb(251, 82, 228);
+}
+#job2-header{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(254, 127, 254);
+    justify-content: space-between;
+}
 
+#job2-header h2, #job2-header h4 {
+    align-self: flex-end;
+    margin-bottom: 0;
+}
 
+#job2-text {
+    background-color: rgb(251, 114, 251);
+}
+.job3-container {
+    background-color: rgb(251, 175, 82);
+}
+#job3-header{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(254, 197, 127);
+    justify-content: space-between;
+}
+#job3-header h2, #job3-header h4 {
+    align-self: flex-end;
+    margin-bottom: 0;
+}
+#job-text {
+    background-color: rgb(251, 182, 114);
+}
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    text-align: left; 
+    padding: 0px 20px 0px 20px;
+}
 
 
 
