@@ -1,13 +1,24 @@
 
 body {
     max-width: 100vw;
-    margin: 100px;
+    margin: 5vh 15vw 5vh 15vw;
     text-align: center;
-    vertical-align: top;
-    font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+    vertical-align: top;    
+    font-family: "Sarabun", sans-serif;
+    font-weight: 100;
+    font-style: normal;
     background-color: aqua;
 }
+h1, h2, #job1-header, #job2-header, #job3-header {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
 
+h1 {
+    font-size: 50px;
+}
 header {
     background-color: antiquewhite;
 }
@@ -22,7 +33,7 @@ header {
     flex-direction: column;
     background-color: rgb(64, 76, 246);   
     text-align: left; 
-    width: 170%;
+    width: 200%;
     padding: 0px 20px 0px 20px;
 }
 
@@ -102,12 +113,10 @@ header {
 .details-container {
     display: flex;
     flex-direction: column;
-    background-color: red;
+    background-color: rgb(227, 227, 227);
     text-align: left; 
     padding: 0px 20px 0px 20px;
 }
-
-
 
 #contact h4 , #skills h4 {
     margin-bottom: -10px;
@@ -117,150 +126,63 @@ header {
     margin-bottom: 25px;
 } 
 
-table {
-    border: 1px solid black;
-}
 
-resume-container {
-    display: flex;
-    text-align: left;
-    flex-direction: column;
-    float: left;
-    width: 70%;
-    padding: 20px;
-    background-color: rgb(210, 255, 255);
-}
-
-details-container {
-    display: flex;
-    text-align: left;
-    flex-direction: column;
-    padding: 20px;
-    background-color: rgb(232, 232, 232);
-}
-
-
-skills h4 {
-    margin-bottom: -10px;
-}
-
-
-/* 
-body{
-    max-width: 100vw;
-    margin: 100px;
-    text-align: center;
-    vertical-align: top;
-    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
-}
-
-.table-container {
-    display: flex; 
-    text-align: left;
-}
-
-table, td, th, #profile {
-    border: 1px solid black; 
-    padding: 5px;
-    vertical-align: top;
-  }
-
-.table1 {
-   margin: 0px 0px 0px 0px;
-}
-
-.table2{   
-    background-color: aliceblue; 
-    
-}
-
-
-.table2-row {
+#contact-link, #skills-link, #education-link {
     display: none;
 }
 
 
-h1{
-    font-size: 55px;
-}
-
-h2, #job-title, #profile {
-    font-size: 25px;
-    font-weight: 500; 
-}
-
-#contact h4,
-#skills h4 {
-    margin: 8px;
-}
-
-h3 {
-    font-size: 19px;
-}
-
-h4 { 
-    font-size: 15px;
-    font-weight: 100;
-}
-
-#job-title{
-    vertical-align: bottom;
-}
-
-#dates {
-    text-align: right;
-    vertical-align: bottom;
-}
-
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-    body{
-        max-width: 850px;
+@media screen and (max-width: 1150px) {
+  
+    .content-container {
+        flex-direction: column;        
     }
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    body{
-        max-width: 650px;
+    .resume-container {
+        display: contents;
     }
-    .table-container {
-        display: block;
-    }
-    .table2 {
-        display: none;
-    }
-    .table2-row {
-        display: block;
-        background-color: rgb(243, 244, 244);
-        justify-content: space-between;
-    }
-}
-
-@media screen and (min-width: 481px) and (max-width: 767px) {
-    body{
-        max-width: 450px;
-    }
-    .table-container {
-        display: block;
-    }
-    
-    .table2 {
+    .details-container {
         display: flex;
-        margin-left: 0px;
+        flex-direction: row;
+        background-color: red;
+        text-align: left;
+        padding: 0px 20px 0px 20px;
     }
-    .table2-row{
-        display: none;
+
+    .contact-container,
+    .skills-container,
+    .education-container {
+        width: 100%;
+    }
+
+    #contact-text,
+    #skills,
+    #education {
+        padding: 20px; 
+    }
+
+    #contact-link {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
     }
 }
 
-@media screen and (max-width: 480px) {
-    body{
-        max-width: 380px;
+@media screen and (max-width: 850px) {
+    .details-container {
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+        text-align: center;
     }
-    .table-container {
-        display: block;
+    #buttons {
+        display: flex;
+        justify-content: space-around;
+       
     }
-    .table2 {
-        display: block;
-        margin-left: 0px;
+    #contact-link, #skills-link, #education-link {
+        display: flex;
+      
+
     }
-} */
+  
+}

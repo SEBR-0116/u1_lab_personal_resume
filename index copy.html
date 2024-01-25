@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&family=Sarabun:wght@100&display=swap" rel="stylesheet">
     <title>Resume</title>
 </head>
 <body>
@@ -11,6 +16,11 @@
         <h1>Connor Reidy</h1>
         <h2>Software Engineer</h2>
     </header>
+    <div id="buttons">
+        <div id="contact-link" onclick="scrollToContact()">Contact</div>
+        <div id="skills-link" onclick="scrollToSkills()">Skills</div>
+        <div id="education-link" onclick="scrollToEducation()">Education</div>
+    </div>
     <div class="content-container">
         <div class="resume-container">
             <div class="profile-container">
@@ -50,7 +60,7 @@
             </div>   
         </div>
         <div class="details-container">
-            <div class="contact-container">
+            <div class="contact-container" id="contact-section">
                 <div id="contact-text">
                     <h2>Contact</h2>
                     <h4>(555) 555-555</h4>
@@ -59,7 +69,7 @@
                     <h4>in/johndoe</h4>
                 </div>
             </div>
-            <div class="skills-container">
+            <div class="skills-container" id="skills-section">
                 <div id="skills">
                     <h2>Skills</h2>
                         <h4>HTML</h4>
@@ -68,9 +78,9 @@
                         <h4>React</h4>
                         <h4>Python</h4>
                         <h4>SQL</h4>
-                </div>div
+                </div>
             </div>
-            <div class="education-container">
+            <div class="education-container" id="education-section">
                 <div id="education">
                     <h2>Education</h2>
                     <h3>Your Institution1</h3>
