@@ -1,0 +1,234 @@
+
+body {
+    max-width: 100vw;
+    margin: 100px;
+    text-align: center;
+    vertical-align: top;
+    font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+    background-color: aqua;
+}
+
+header {
+    background-color: antiquewhite;
+}
+.content-container {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(44, 224, 50);
+}
+
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(64, 76, 246);   
+    text-align: left; 
+    width: 170%;
+    padding: 0px 20px 0px 20px;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    text-align: left; 
+    padding: 0px 20px 0px 20px;
+}
+
+.profile-container {
+    background-color: rgb(82, 94, 251);
+}
+#profile-header{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(127, 136, 254);
+    justify-content: space-between;
+}
+
+#profile-header h2, #profile-header h4 {
+    align-self: flex-end;
+    margin-bottom: 0;
+}
+
+#profile-text {
+    background-color: rgb(114, 123, 251);
+}
+
+.job1-container {
+    background-color: rgb(251, 175, 82);
+}
+#job1-header{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(254, 197, 127);
+    justify-content: space-between;
+}
+
+#job1-header h2, #job1-header h4 {
+    align-self: flex-end;
+    margin-bottom: 0;
+}
+
+#job1-text {
+    background-color: rgb(251, 182, 114);
+}
+
+
+
+
+
+
+#contact h4 , #skills h4 {
+    margin-bottom: -10px;
+}
+
+#contact, #skills {
+    margin-bottom: 25px;
+} 
+
+table {
+    border: 1px solid black;
+}
+
+resume-container {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    float: left;
+    width: 70%;
+    padding: 20px;
+    background-color: rgb(210, 255, 255);
+}
+
+details-container {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(232, 232, 232);
+}
+
+
+skills h4 {
+    margin-bottom: -10px;
+}
+
+
+/* 
+body{
+    max-width: 100vw;
+    margin: 100px;
+    text-align: center;
+    vertical-align: top;
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
+}
+
+.table-container {
+    display: flex; 
+    text-align: left;
+}
+
+table, td, th, #profile {
+    border: 1px solid black; 
+    padding: 5px;
+    vertical-align: top;
+  }
+
+.table1 {
+   margin: 0px 0px 0px 0px;
+}
+
+.table2{   
+    background-color: aliceblue; 
+    
+}
+
+
+.table2-row {
+    display: none;
+}
+
+
+h1{
+    font-size: 55px;
+}
+
+h2, #job-title, #profile {
+    font-size: 25px;
+    font-weight: 500; 
+}
+
+#contact h4,
+#skills h4 {
+    margin: 8px;
+}
+
+h3 {
+    font-size: 19px;
+}
+
+h4 { 
+    font-size: 15px;
+    font-weight: 100;
+}
+
+#job-title{
+    vertical-align: bottom;
+}
+
+#dates {
+    text-align: right;
+    vertical-align: bottom;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    body{
+        max-width: 850px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    body{
+        max-width: 650px;
+    }
+    .table-container {
+        display: block;
+    }
+    .table2 {
+        display: none;
+    }
+    .table2-row {
+        display: block;
+        background-color: rgb(243, 244, 244);
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    body{
+        max-width: 450px;
+    }
+    .table-container {
+        display: block;
+    }
+    
+    .table2 {
+        display: flex;
+        margin-left: 0px;
+    }
+    .table2-row{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body{
+        max-width: 380px;
+    }
+    .table-container {
+        display: block;
+    }
+    .table2 {
+        display: block;
+        margin-left: 0px;
+    }
+} */
