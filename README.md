@@ -35,3 +35,10 @@ List any degrees and your GA education.
 
 ## Example Resume Template 
 ![Screen Shot 2022-10-12 at 9 48 33 AM](https://user-images.githubusercontent.com/100215009/195360370-b613f7b4-af6b-4534-a7f4-dde7ecd8d625.png)
+
+
+Resources
+
+Scrolling Div Link
+https://stackoverflow.com/questions/42503599/how-to-make-javascript-scrollintoview-smooth
+

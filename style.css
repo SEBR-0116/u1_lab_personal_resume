@@ -1,0 +1,166 @@
+
+body {
+    max-width: 100vw;
+    margin: 5vh 15vw 10vh 15vw;
+    text-align: center;
+    vertical-align: top;    
+    font-family: "Sarabun", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    background-color: rgb(255, 254, 250);
+}
+h1, h2, #job1-header, #job2-header, #job3-header {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+header h2 {
+    padding-bottom: 20px;
+}
+h1 {
+    font-size: 50px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+    width: 200%;
+    padding: 0px 20px 0px 20px;
+}
+
+#profile-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#profile-header h2, #profile-header h4 {
+    align-self: flex-end;
+    margin-bottom: 0;
+}
+
+
+#job1-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#job1-header h2, #job1-header h4 {
+    align-self: flex-end;
+    margin-bottom: 0;
+}
+
+#job2-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#job2-header h2, #job2-header h4 {
+    align-self: flex-end;
+    margin-bottom: 0;
+}
+
+#job3-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#job3-header h2, #job3-header h4 {
+    align-self: flex-end;
+    margin-bottom: 0;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(238, 237, 235);
+    text-align: left; 
+    padding: 0px 50px 0px 20px;
+}
+
+
+#contact h4 , #skills h4, #education h3, #education h4 {
+    margin-bottom: -10px;
+}
+
+
+
+#contact, #skills {
+    margin-bottom: 50px;
+} 
+
+
+#contact-link, #skills-link, #education-link {
+    display: none;
+}
+
+
+@media screen and (max-width: 1150px) {
+    body {
+        max-width: 100vw;
+        margin: 5vh 12vw 2vh 12vw;
+    }
+    .content-container {
+        flex-direction: column;        
+    }
+    .resume-container {
+        display: contents;
+    }
+    .details-container {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        padding: 0px 20px 0px 20px;
+    }
+
+    .contact-container,
+    .skills-container,
+    .education-container {
+        width: 100%;
+    }
+
+     #contact,
+    #skills,
+    #education {
+        padding: 20px; 
+    }
+  
+    .skills-container {
+        padding-left: 55px;
+    }
+    #buttons {
+        display: flex;
+        justify-content: space-around
+    }
+    #contact-link, #skills-link, #education-link {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .details-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+  
+    .skills-container {
+        padding-left: 0px;
+    }
+}
