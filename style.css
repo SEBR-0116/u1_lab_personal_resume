@@ -1,13 +1,13 @@
 
 body {
     max-width: 100vw;
-    margin: 5vh 15vw 5vh 15vw;
+    margin: 5vh 15vw 10vh 15vw;
     text-align: center;
     vertical-align: top;    
     font-family: "Sarabun", sans-serif;
     font-weight: 100;
     font-style: normal;
-    background-color: aqua;
+    background-color: rgb(255, 254, 250);
 }
 h1, h2, #job1-header, #job2-header, #job3-header {
     font-family: "Red Hat Display", sans-serif;
@@ -16,34 +16,29 @@ h1, h2, #job1-header, #job2-header, #job3-header {
     font-style: normal;
 }
 
+header h2 {
+    padding-bottom: 20px;
+}
 h1 {
     font-size: 50px;
 }
-header {
-    background-color: antiquewhite;
-}
+
 .content-container {
     display: flex;
     flex-direction: row;
-    background-color: rgb(44, 224, 50);
 }
 
 .resume-container {
     display: flex;
     flex-direction: column;
-    background-color: rgb(64, 76, 246);   
     text-align: left; 
     width: 200%;
     padding: 0px 20px 0px 20px;
 }
 
-.profile-container {
-    background-color: rgb(82, 94, 251);
-}
 #profile-header{
     display: flex;
     flex-direction: row;
-    background-color: rgb(127, 136, 254);
     justify-content: space-between;
 }
 
@@ -52,17 +47,10 @@ header {
     margin-bottom: 0;
 }
 
-#profile-text {
-    background-color: rgb(114, 123, 251);
-}
 
-.job1-container {
-    background-color: rgb(251, 175, 82);
-}
 #job1-header{
     display: flex;
     flex-direction: row;
-    background-color: rgb(254, 197, 127);
     justify-content: space-between;
 }
 
@@ -71,17 +59,9 @@ header {
     margin-bottom: 0;
 }
 
-#job1-text {
-    background-color: rgb(251, 182, 114);
-}
-
-.job2-container {
-    background-color: rgb(251, 82, 228);
-}
 #job2-header{
     display: flex;
     flex-direction: row;
-    background-color: rgb(254, 127, 254);
     justify-content: space-between;
 }
 
@@ -90,40 +70,33 @@ header {
     margin-bottom: 0;
 }
 
-#job2-text {
-    background-color: rgb(251, 114, 251);
-}
-.job3-container {
-    background-color: rgb(251, 175, 82);
-}
 #job3-header{
     display: flex;
     flex-direction: row;
-    background-color: rgb(254, 197, 127);
     justify-content: space-between;
 }
 #job3-header h2, #job3-header h4 {
     align-self: flex-end;
     margin-bottom: 0;
 }
-#job-text {
-    background-color: rgb(251, 182, 114);
-}
 
 .details-container {
     display: flex;
     flex-direction: column;
-    background-color: rgb(227, 227, 227);
+    background-color: rgb(238, 237, 235);
     text-align: left; 
-    padding: 0px 20px 0px 20px;
+    padding: 0px 50px 0px 20px;
 }
 
-#contact h4 , #skills h4 {
+
+#contact h4 , #skills h4, #education h3, #education h4 {
     margin-bottom: -10px;
 }
 
+
+
 #contact, #skills {
-    margin-bottom: 25px;
+    margin-bottom: 50px;
 } 
 
 
@@ -133,7 +106,10 @@ header {
 
 
 @media screen and (max-width: 1150px) {
-  
+    body {
+        max-width: 100vw;
+        margin: 5vh 12vw 2vh 12vw;
+    }
     .content-container {
         flex-direction: column;        
     }
@@ -143,7 +119,6 @@ header {
     .details-container {
         display: flex;
         flex-direction: row;
-        background-color: red;
         text-align: left;
         padding: 0px 20px 0px 20px;
     }
@@ -154,16 +129,26 @@ header {
         width: 100%;
     }
 
-    #contact-text,
+     #contact,
     #skills,
     #education {
         padding: 20px; 
     }
-
-    #contact-link {
+  
+    .skills-container {
+        padding-left: 55px;
+    }
+    #buttons {
         display: flex;
+        justify-content: space-around
+    }
+    #contact-link, #skills-link, #education-link {
+        display: flex;
+        flex-direction: row;
         justify-content: space-around;
         margin-bottom: 20px;
+        text-decoration: underline;
+        cursor: pointer;
     }
 }
 
@@ -171,18 +156,11 @@ header {
     .details-container {
         display: flex;
         flex-direction: column;
-        background-color: red;
         text-align: center;
-    }
-    #buttons {
-        display: flex;
-        justify-content: space-around;
-       
-    }
-    #contact-link, #skills-link, #education-link {
-        display: flex;
-      
-
+        
     }
   
+    .skills-container {
+        padding-left: 0px;
+    }
 }
